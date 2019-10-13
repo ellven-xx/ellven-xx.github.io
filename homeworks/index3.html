@@ -3,40 +3,163 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 	</head>
-	<body background="img/ba0172ce98cc25c03fb2986e55205655.jpg">
-		<center>
-	<a name="top"></a>
-<p>
-<a href="#C0">概括</a>
-<a href="#C1">最初：卡套</a>
-<a href="#C2">其次：新生特刊</a>
-<a href="#C3">最重要：舍友</a>
-</p>
-<h2><a id="C1"><font color=red>原因概括</font></a></h2>
-<ul type="disc">
-	<li style="color: firebrick;">我对此有着充分的热情，有大量的时间去学习（皮一下很开心）</li>
-	<li style="color: firebrick;">养辅说推荐我们到三翼</li>
-	<li style="color: firebrick;">技术部很厉害，又与我们网工的专业较为相符</li>
-	<li style="color: firebrick;">想要努力在三翼学习，然后变得更好吧</li>
-	<li style="color: firebrick;">最后，没有大量的时间，都是熬夜熬的</li>
-</ul>
-<marquee width="750px"><h1 style="color:darkgrey ;">熬夜好困</h1></marquee></br>
-<img src="img/fa22399ccb1e5e80dc5374abb4a678f1.jpg" width="300px" height="400px" />
-<h3 style="color: saddlebrown;font-size: x-large;">与三翼的渊源（字数太少，用来凑字数）</h3>
+	<style>
+		
+		.firstbig{
+			width: 100%;
+			height:2300px;
+			background:lightcyan;
+		}
+		
+		.pic{
+			width: 100%;
+            height: 650px;
+            background:url(img/566666.jpeg);
+            background-size:100% 650px;
+            margin-bottom: 30px;
+		}
+		
+		.content{
+			width: 100%;
+			height: 1800px;
+			position: relative;
+			background:lightpink;
+			overflow: hidden;
+		}
+		
+		.word{
+			width :100%;
+			height: 1650px;
+			border: 1px solid #f4f4f4;
+		}
+		
+		.nav{
+			width: 100%;
+			height: 70px;
+			padding: 0px;
+			margin: 30px auto;
+			border:1px solid #000;
+			overflow: hidden;
+		}
+		
+		 .nav li{
+			list-style-type: none;
+			float: left;
+			display: block;
+			width: 375px;
+			height: 70px;
+			font-family: Microsoft Yahei;
+			line-height: 80px;
+			background-color: #2f4f4f;
+			margin: 0px 0px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		
+		li:hover,.selected{
+			background-color: #2f6f4f;
+			border-left: 1px solid #ecebeb;
+		}
+		
+		.left{
+			width: 50%;
+			background: red;
+		}
+			
+		.left{
+			width: 50%;
+			background:blue;
+		}
+		
+	</style>
+	<body>
+		<div class=" firstbig">
+			<div class="pic">
+				<div style="z-index: 3;position: absolute;">
+					<img src="img/55558.png" />
+				</div>
+			</div>
+			<div class="content">
+				<div>
+					<ul class="nav">
+						<li class="selected">军训动员</li>
+						<li>学习ing</li>
+						<li>表彰大会</li>
+						<li>教官们</li>
+					</ul>
+				</div>
+				<div class="word">
+					<div class="list">
+						<img src="img/1570934893431.jpeg"  width="600px" align="left"/>
+						<p style="font-size: 50px; font-family: '楷体'; color: grey;" >
+							&nbsp;&nbsp;&nbsp;军训前一天晚上见教官 </p>
+						<p style="font-size: 50px; font-family: '楷体'; color: grey;" >
+							&nbsp;&nbsp;&nbsp;兴奋地等待 </p>
+					</div>
+					<div class="list">
+					    <img src="img/timg.jpeg" height="350px"align="left" />
+					    <img src="img/timg-1.jpeg" height="350px"align="left" />
+					    <img src="img/timg-3.jpeg" height="350px"align="left" />
+					    <img src="img/timg-4.jpeg" height="350px"align="left" />
+					    <img src="img/timg.jpeg" height="350px"align="left" />
+					    <img src="img/timg-2.jpeg" height="350px"align="left" />
+					    <p style="font-size: 30px; font-family: '楷体'; color:blueviolet; float: left;" >
+							&nbsp;&nbsp;&nbsp;学习ing </p>
+						<p style="font-size: 30px; font-family: '楷体'; color: blueviolet; float: left;" >
+							&nbsp;&nbsp;&nbsp;站军姿，正步，齐步，敬礼 </p>
+
+					</div>
+					<div class="list">
+					<p style="font-size: 30px; font-family: '楷体'; color: orangered; float: left;" >
+							&nbsp;&nbsp;&nbsp;新同学有着新面貌，带着朝气，带着自信迎来了军训的严峻考验，五天的军训生活将成为我们未来三年的基础，
+                                                                            它将教会同学怎样严格要求自己，怎样做一个真正的大学生，一个合格的社会人。
+                                                                            站在火红的军旗下，我们所有新生身穿校服，一种雄赳赳，气昂昂的军人姿态，使我们不禁热血澎湃。
+                                                                            军训作为大学生活中的第一课，同学们会用自己的努力，自己的良好习惯，和自己最认真最严谨的态度对待这次军训。 </p>
+                    <p style="font-size: 30px; font-family: '楷体'; color: blueviolet; float: left;" >
+							&nbsp;&nbsp;&nbsp;   为期十五天的军训结束了，大家苦过累过，也开心欢快过。</p>
+                    <p style="font-size: 30px; font-family: '楷体'; color:greenyellow; float: left;" >
+							&nbsp;&nbsp;&nbsp; 这是一段值得铭记的日子，这是永不会褪色的记忆。 </p>     
 	
-<h2><a id="C1"><font color="plum">最初：卡套</font></a></h2>
-<p>刚踏入学校时，其实并不知道三翼，碰巧去东门的路上，一个长得好看的学姐问我是新生吗，然后就送了我一张卡套。</p>
-<p>这是最初对三翼的印象</p>
-<img src="img/IMG_20190919_212617.JPG" width="300px" height="400px"/>
-<h2><a id="C2"><a id="C1"><font color="plum">其次：新生特刊</font></a></h2>
-<p>依然是去东门的路上，另一个学姐给了我一本杂志，让我初步了解了三翼。</p>
-<img src="img/IMG_20190919_212607.JPG" width="300px" height="400px" />
-<h2><a id="C3"><a id="C1"><font color="plum">最重要：舍友</font></a></h2>
-<p>对三翼有了一些了解是因为同寝室的一个舍友十分的想要去三翼，从她那里得知了三翼技术部大抵是做什么的
-	心里便觉得三翼很厉害，便和舍友一起报了名。</p>
-	<img src="img/IMG_20190920_012424.JPG" width="300px" height="400px"/>
-	<a href="#top">点击回到顶部</a>
-	</center>
+					</div>
+					<div class="list">
+					<img src="img/1570768723219.jpeg"width="800px" />
+					<img src="img/1570768749268.jpeg" width="800px" />
+					<p style="font-size: 30px; font-family: '楷体'; color: blueviolet; float: right;" >
+							&nbsp;&nbsp;&nbsp;   我们全三营的可爱教官们，真皮真骚</p>
+					<p style="font-size: 30px; font-family: '楷体'; color: blueviolet; float:left;" >
+							&nbsp;&nbsp;&nbsp;   表面上一番严肃的面孔</p>
+					<p style="font-size: 30px; font-family: '楷体'; color: blueviolet; float: left;" >
+							&nbsp;&nbsp;&nbsp;   实则都是小可爱</p>
+					</div>
+				</div>
+				 	
+			</div>
+		</div>
+		
+        <script>
+								$(function(){
+									//获取点击事件的对象
+									$(".nav li").click(function(){
+										//获取要显示或隐藏的对象
+										var divShow = $(".word").children('.list');
+										//判断当前对象是否被选中，如果没选中的话进入if循环
+										if (!$(this).hasClass('selected')) {
+											//获取当前对象的索引
+											var index = $(this).index();
+											//当前对象添加选中样式并且其同胞移除选中样式；
+											$(this).addClass('selected').siblings('li').removeClass('selected');
+											//索引对应的div块显示
+											$(divShow[index]).show();
+											//索引对应的div块的同胞隐藏
+											$(divShow[index]).siblings('.list').hide();
+										}
+									});
+								});
+				
+		</script>
 	</body>
 </html>

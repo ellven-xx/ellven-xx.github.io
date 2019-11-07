@@ -1,0 +1,638 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.first-box{
+	width: 1400px·;
+	height: 1270px;
+	position: relative;
+	padding-left:60px;
+	padding-right: 60px;
+}
+
+.top{
+	width:100%;
+	height:60px;
+}
+
+.top-logo{
+	width: 131px;
+	height: 45px;
+	margin: 23px 0 0;
+	
+}
+
+.top-search1 {
+	position: relative;
+	width: 500px;
+	height: 35px;
+	line-height: 32px;
+	margin: -30px 0 0 450px;
+	border: 1px solid #dfdfdf;
+	background-color: #f3f6f8;
+	border-radius: 20px;
+	z-index: 1;
+}
+
+.top-search2 {
+	position: relative;
+	width: 120px;
+	height: 35px;
+	margin: -37px 0 0 830px;
+	border: 1px solid #1479D7;
+	background-color: #1479d7;
+	border-radius: 20px;
+	z-index: 2;
+}
+.se-wb{
+	position: relative;
+	width: 101px;
+	height: 30px;
+	z-index: 3;
+	margin-left: 15px;
+	margin-top: 3px;
+}
+
+.se-word{
+	color: #FFFFFF;
+}
+.shouye{
+	position: relative;
+	margin-left: 10px;
+	color: black;
+}
+
+.shouye a{
+	text-decoration: none;
+}
+
+.shouye  a:hover{
+	color: black;
+}
+
+.to-pic{
+	position: relative;
+	width: 120px;
+	height: 40px;
+	float: right;
+	margin-top: -37px;
+}
+
+.qzone{
+	float: left;
+	margin-right: 5px;
+}
+
+.qzone a{
+	display: inline-block;
+	width: 35px;
+	height: 40px;
+	background-image: url(../img/QQ图片20191107105655.png);
+	background-position: 0 -93px;
+}
+
+.qzone a:hover{
+	background-position: 0 -143px;
+}
+
+.mail a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image:url(../img/QQ图片20191107105655.png);
+	background-position: 0 -188px;
+}
+
+.mail{
+	float: left;
+}
+
+.mail a:hover{
+	background-position: 0 -238px;
+}
+
+.denglu a{
+	float: left;
+	width: 37px;
+	height: 37px;
+	background-color: #f5f5f5;
+	display: inline-block;
+	color: #60a5e4;
+	text-decoration: none;
+	text-align: center;
+	line-height: 37px;
+	border: 1px solid #ededed;
+	font-size: 14px;
+}
+
+.denglu :hover{
+	border-color: #cae0f3;
+}
+
+.nav{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	background:#1479d7;
+	font-size: 18px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.nav-ul{
+	line-height: 48px;
+	padding: 2px 25px;
+	color: #FFF;
+	list-style-type: none;
+}
+
+.nav-ul a {
+	padding: 4px 15px;
+	color: #FFF;
+}
+
+.nav-ul a:hover {
+	color: #14539a;
+	background-color: #cbe1ed;
+}
+
+.nav-item {
+	float: left;
+	width: 78px;
+	text-align: center;
+}
+.nav-item a{
+	text-decoration: none;
+}
+
+.guangg{
+	position: relative;
+	width: 100%;
+	height:88px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.gg-left{
+	height:70px;
+	width: 65%;
+	position: relative;
+	margin-right: 3%;
+	float: left;
+}
+
+.gg-right{
+	height:70px;
+	width: 32%;
+	position: relative;
+	margin-top: 8px;
+	float:left;
+}
+
+.content{
+	width:100%;
+	height:1000px;
+	position: relative;
+	
+}
+.co-left{
+	position: relative;
+	width: 31%;
+	height:100%;
+	margin-right: 3%;
+	float: left;
+}
+
+.le-sm1{
+	position: relative;
+	height:4%;
+	width: 100%;
+    float: initial;
+}
+
+.le-sm11{
+	position: relative;
+	height:100%;
+	width: 22%;
+	float: left;	
+}
+
+.le-sm12{
+	position: relative;
+	height:100%;
+	width: 28%;
+	float: left;	
+}
+
+.sm1-word{
+	position: relative;
+}
+
+.sm1-word a{
+	text-decoration: none;
+	color: black;	
+}
+
+.sm1-word a:hover{
+	color: #14539a;
+}
+
+.le-sm2{
+	position: relative;
+	height:30%;
+	width: 100%;
+    float: initial;
+}
+
+.sm2-word{
+	height:10%;
+	width: 100%;
+	position: relative;
+	margin-top: 6px;
+	color: black;
+	font-size: 16px;
+}
+
+.sm2-word a{
+	text-decoration: none;
+	color:black;
+}
+
+.sm2-word a:hover{
+	color: dodgerblue;
+}
+
+.le-sm3{
+	position: relative;
+	height:12%;
+	width: 100%;
+    float: initial;
+}
+
+.sm3-pic{
+	position: relative;
+	height:100%;
+	width: 47%;
+	float: left;
+}
+
+.sm3-word{
+	position: relative;
+	height:100%;
+	width: 50%;
+	margin-left: 3%;
+	float: left;
+}
+
+.le-sm4{
+	position: relative;
+	height:19%;
+	width: 100%;
+    float: initial;
+
+}
+
+.sm4-word{
+	height:14%;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+	color: black;
+	font-size: 16px;
+}
+
+.sm4-word a{
+	text-decoration: none;
+	color:black;
+}
+
+.sm4-word a:hover{
+	color: dodgerblue;
+}
+
+.le-sm5{
+	position: relative;
+	height:12%;
+	width: 100%;
+    float: initial;
+    margin-top: 20px;
+}
+
+.sm5-pic{
+	position: relative;
+	height:100%;
+	width: 47%;
+	float: left;
+}
+
+.sm5-word{
+	position: relative;
+	height:100%;
+	width: 50%;
+	margin-left: 3%;
+	float: left;
+}
+
+.le-sm6{
+	position: relative;
+	height:15%;
+	width: 100%;
+    float: initial;
+    margin-top: 20px;
+}
+
+.sm6-word{
+	height:16%;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+	color: black;
+	font-size: 16px;
+}
+
+.sm6-word a{
+	text-decoration: none;
+	color:black;
+}
+
+.sm6-word a:hover{
+	color: dodgerblue;
+}
+
+.co-middle{
+	position: relative;
+	width: 31%;
+	height:100%;
+	margin-right: 3%;
+	float: left;
+}
+
+.mi-sm1{
+	position: relative;
+	height:4%;
+	width: 100%;
+    float: initial;
+}
+
+.mi-sm1 a{
+	text-decoration: none;
+	color:black;
+}
+
+
+.mi-sm1 a:hover{
+	color:  #14539a;
+}
+
+.mi-word{
+	position: relative;
+	color:black;
+}
+
+.mi-sm2{
+	position: relative;
+	width: 100%;
+	height: 25%;
+	margin-top: 6px;
+}
+
+.mi-sm11{
+	position: relative;
+	width: 100%;
+	height: 12%;
+}
+
+.mi11-word{
+	font-size: 20px;
+}
+
+.mi-sm11 a{
+	text-decoration: none;
+	color: black;
+}
+
+.mi-sm12{
+	position: relative;
+	width: 100%;
+	height: 11%;
+	margin-top: 6px;
+}
+.sm12-le1{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+.sm12-re1{
+	position: relative;
+	width: 55%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+.sm12-le2{
+	position: relative;
+	width:13%;
+	height: 100%;
+	float: left;
+}
+
+.sm12-re2{
+	position: relative;
+	width: 82%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+
+.sm12-le3{
+	position: relative;
+	width:10%;
+	height: 100%;
+	float: left;
+}
+
+.sm12-re3{
+	position: relative;
+	width: 85%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+
+.sm12-le4{
+	position: relative;
+	width:15%;
+	height: 100%;
+	float: left;
+}
+
+.sm12-re4{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+
+.12-word{
+	font-size: 19px;
+}
+.sm12-le1 a,.sm12-re1 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.sm12-le1 a:hover,.sm12-re1 a:hover{
+color:#14539a ;	
+}
+
+.sm12-le2 a,.sm12-re2 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.sm12-le2 a:hover,.sm12-re2 a:hover{
+color:#14539a ;	
+}
+
+.sm12-le3 a,.sm12-re3 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.sm12-le3 a:hover,.sm12-re3 a:hover{
+color:#14539a ;	
+}
+
+.sm12-le4 a,.sm12-re4 a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.sm12-le4 a:hover,.sm12-re4 a:hover{
+color:#14539a ;	
+}
+
+.mi-sm11 a:hover{
+	color: #14539a ;
+}
+
+.mi-sm3{
+	position: relative;
+	width: 100%;
+	height: 36%;
+	margin-top: 6px;
+}
+
+.mi-sm4{
+	position: relative;
+	width: 100%;
+	height: 18%;
+	margin-top: 6px;
+}
+
+.mi-sm42{
+	position: relative;
+	width: 100%;
+	height: 16%;
+	margin-top: 6px;
+}
+
+.co-right{
+	position: relative;
+	width: 32%;
+	height:100%;
+	float: left;
+}
+
+.ri-sm1{
+	position: relative;
+	width: 100%;
+	height:18%;
+	float: initial;
+}
+
+.ri-sm2{
+	position: relative;
+	width: 100%;
+	height:48%;
+	margin-top: 7px;
+	float: initial;
+}
+
+.ri-sm21{
+	position: relative;
+	width: 100%;
+	height:15%;
+	margin-top: 4px;
+	float: initial;
+}
+
+.ri-word{
+	position: relative;
+	color:black;
+}
+
+.ri-word a{
+	text-decoration: none;
+	color: #14539a
+}
+
+.ri-sm22{
+	position: relative;
+	width: 100%;
+	height:40%;
+	margin-top: 4px;
+	float: initial;
+}
+
+.ri-sm23{
+	position: relative;
+	width: 100%;
+	height:31%;
+	margin-top: 65px;
+	float: initial;
+}
+
+.rsm23-word{
+	position: relative;
+	width: 100%;
+	height:17%;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.rsm23-word a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.rsm23-word a:hover{
+	color: #14539a;
+}
+
+.ri-sm3{
+	position: relative;
+	width: 100%;
+	height:30%;
+	float: initial;
+}
+
+.ri-sm31{
+	position: relative;
+	width: 100%;
+	height:35%;
+	float: initial;
+}
+
+.ri-sm32{
+	position: relative;
+	width: 100%;
+	height:62%;
+	float: initial;
+	margin-top: 40px;
+}
+

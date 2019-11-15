@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/index.css">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="bigbox">
+			<ul id="pic" style="left: 0px;">
+				<li class="c1"><img src="img/1541941579-NXSvGWFdsK.jpg" width="100%"/></li>
+				<li class="c2"><img src="img/fa36f2780efa0783e1a67f5928a62994.jpg" width="100%"/></li>
+				<li class="c3"><img src="img/57fb5958bf0c0.jpg" width="100%"/></li>
+				<li class="c4"><img src="img/5b55885720040.jpg" width="100%"/></li>
+				<li class="c5"><img src="img/c077851d578f3a6927a59b8da01c209caecfb1855cd2f-D79rMw_fw658.jpg" width="100%"/></li>
+			</ul>
+			<span id="buttons">
+				<span index="1" class="on"></span>
+				<span index="2"> </span>
+				<span index="3"> </span>
+				<span index="4"> </span>
+				<span index="5"> </span>
+			</div>
+			<div id="left">
+				<div class="fuhao">
+					<</div>
+				</div>
+				<div id="right">
+					<div class="fuhao">></div>
+				</div>
+
+			</div>
+			<script>
+				let box = document.getElementById("bigbox");
+				let pic = document.getElementById("pic");
+				let left = document.getElementById("left");
+				let right = document.getElementById("right");
+				var flag1 = false;
+				var buttons = document.getElementById('buttons').getElementsByTagName('span');
+				var index = 1;
+            	function buttonsShow() {
+                for (var i = 0; i < buttons.length; i++) {
+                    if (buttons[i].className == 'on')
+                    {
+                        buttons[i].className = '';
+                    }
+                }
+                buttons[index - 1].className = 'on';
+            }
+
+            left.onclick = function() {
+                index -= 1;
+                if (index < 1) {
+                    index = 5;
+                }
+                buttonsShow();
+				{
+					if(parseInt(pic.style.left) >= 0) {
+						pic.style.left = "-4000px";
+					} else {
+						pic.style.left = parseInt(pic.style.left) + 1000 + "px";
+					}
+				};
+            }
+            right.onclick = function() {
+                index += 1;
+                if (index > 5) {
+                    index = 1;
+                }
+                buttonsShow();
+               	{
+					if(parseInt(pic.style.left) <= -4000) {
+						pic.style.left = "0px";
+					} else {
+						pic.style.left = parseInt(pic.style.left) - 1000 + "px";
+					}
+				};
+            }
+			</script>
+	</body>
+
+</html>

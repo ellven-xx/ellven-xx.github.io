@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/9.css">
+		<title></title>
+	</head>
+	<body>
+		<ul id="tags">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<div class="wrapper" id="wrapper">
+			<div class="page">
+				<div class="page-wrapper">
+					<div class="page01">
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page-wrapper">
+					<div class="page02">
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page-wrapper">
+					<div class="page03">
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				<div class="page-wrapper">
+					<div class="page04">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				var wrapper = $('#wrapper');
+				var pages = wrapper.children;
+				var tags = $("#tags");
+				var lis = $('li');
+				//导航切换
+				for(var j = 0; j < lis.length; j++) {
+					lis[j].index = j;
+					lis[j].onclick = function() {
+						for(var n = 0; n < lis.length; n++) {
+							lis[n].className = "";
+						}
+						this.className = "active";
+						$("#wrapper").animate({
+							top: (-100 * this.index + "%")
+						}, 500);
+					}
+				}
+				//键盘上下键切换
+				var x = 0;
+				var omark = false;
+				document.onkeyup = function(event) {
+					var event = event || window.event || arguments.callee.caller.arguments[0];
+					if(omark) {
+						return;
+					}
+					omark = true;
+					if(event && event.keyCode == 38) {
+						x--;
+						if(x < 0) {
+							x = 0;
+						}
+						$("#wrapper").animate({
+							top: '-' + 100 * x + "%"
+						}, 500, function() {
+							omark = false;
+						});
+					}
+					if(event && event.keyCode == 40) {
+						x++;
+						if(x > 3) {
+							x = 3;
+						}
+						$("#wrapper").animate({
+							top: '-' + 100 * x + "%"
+						}, 500, function() {
+							omark = false;
+						});
+					}
+					for(var n = 0; n < lis.length; n++) {
+						lis[n].className = "";
+					}
+					lis[x].className = "active";
+				}
+				//鼠标滚动
+				var wheel = function(event) {
+					var delta = 0;
+					if(!event) //for ie
+						event = window.event;
+					if(event.wheelDelta) { //ie,opera
+						delta = event.wheelDelta / 120;
+					} else if(event.detail) {
+						delta = -event.detail / 3;
+					}
+					if(delta) {
+						handle(delta, lis);
+					}
+					if(event.preventDefault)
+						event.preventDefault();
+					event.returnValue = false;
+				}
+				if(window.addEventListener) {
+					window.addEventListener('DOMMouseScroll', wheel, false);
+				}
+				window.onmousewheel = wheel;
+				var num;
+
+				function handle(delta, arr) {
+					for(var i = 0; i < arr.length; i++) {
+						if(arr[i].className == "active") {
+							num = i;
+						}
+					}
+					if(delta > 0 && num > 0) { //向上滚动
+						num--;
+						for(var n = 0; n < lis.length; n++) {
+							lis[n].className = "";
+						}
+						arr[num].className = "active";
+					} else if(delta < 0 && num < 3) { //向下滚动
+						num++;
+						for(var n = 0; n < lis.length; n++) {
+							lis[n].className = "";
+						}
+						arr[num].className = "active";
+					}
+					$("#wrapper").animate({
+						top: (-100 * num + "%")
+					}, 500);
+				}
+			});
+		</script>
+	</body>
+
+</html>

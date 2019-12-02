@@ -39,8 +39,8 @@ video {
 	height: 100%;
 	/*加滤镜*/
 	filter: blur(8px);
-	-webkit-filter: grayscale(50%);
-	filter: grayscale(50%); //背景灰度设置
+	-webkit-filter: grayscale(30%);
+	filter: grayscale(30%); //背景灰度设置
 	z-index: -11;
 }
 

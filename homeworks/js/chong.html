@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="images/x-ico" href="img/icon-宠物.ico" />
+		<title>宠物篇</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0 auto;
+			}
+			
+			.bigbox {
+				width: 1200px;
+				height: 2270px;
+				position: relative;
+				background: #f8eef1;
+			}
+			
+			.name {
+				width: 1200px;
+				height: 150px;
+				position: relative;
+				background: url(img/u=2390924124,2419247702&fm=26&gp=0.jpg) no-repeat center center;
+				background-size: 100% 100%;
+				margin-bottom: 10px;
+				z-index: -5px;
+			}
+			
+			.le {
+				width: 150px;
+				height: 150px;
+				float: left;
+				margin-left: 240px;
+				z-index: 1;
+			}
+			
+			.me {
+				width: 450px;
+				height: 150px;
+				margin-right: 1px;
+				float: left;
+			}
+			
+			.ri {
+				width: 150px;
+				height: 150px;
+				float: left;
+				z-index: 1;
+			}
+			
+			p {
+				font-family: 'Audiowide';
+				text-align: center;
+				color: #e71462;
+				font-size: 5em;
+				-webkit-transition: all 1.5s ease;
+				transition: all 1.5s ease;
+			}
+			
+			p:hover {
+				color: #fff;
+				-webkit-animation: Glow 1.5s ease infinite alternate;
+				animation: Glow 1.5s ease infinite alternate;
+			}
+			
+			@-webkit-keyframes Glow {
+				from {
+					text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00a67c, 0 0 70px #00a67c, 0 0 80px #00a67c, 0 0 100px #00a67c, 0 0 150px #00a67c;
+				}
+				to {
+					text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00a67c, 0 0 35px #00a67c, 0 0 40px #00a67c, 0 0 50px #00a67c, 0 0 75px #00a67c;
+				}
+			}
+			
+			@keyframes Glow {
+				from {
+					text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00a67c, 0 0 70px #00a67c, 0 0 80px #00a67c, 0 0 100px #00a67c, 0 0 150px #00a67c;
+				}
+				to {
+					text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00a67c, 0 0 35px #00a67c, 0 0 40px #00a67c, 0 0 50px #00a67c, 0 0 75px #00a67c;
+				}
+			}
+			
+			.maomi {
+				width: 1200px;
+				height: 1000px;
+				position: relative;
+				background: -webkit-linear-gradient( top, rgb(92, 97, 104), #3b3537);
+				box-shadow: 0px -8px 25px #f3dcdc inset, -8px 0px 25px #c9efd5 inset;
+				margin-top: 20px;
+			}
+			
+			.maomi1 {
+				width: 800px;
+				height: 80px;
+				position: relative;
+				font-family: "微软雅黑";
+				padding-top: 25px;
+				font-size: 30px;
+				color: #2bf;
+				margin-left: 45px;
+			}
+			
+			.maomi1:after {
+				content: '';
+				height: .3em;
+				width: 15em;
+				position: relative;
+				display: block;
+				bottom: -0.4em;
+				margin-bottom: -2px;
+				background: #2bf;
+			}
+			
+			.maomi2 {
+				width: 1080px;
+				height: 40px;
+				position: relative;
+				font-family: "微软雅黑";
+				padding-top: 25px;
+				font-size: 25px;
+				margin-left: 70px;
+				color: #FFFFF0;
+			}
+			
+			.maomid{
+				width: 1120px;
+				height: 780px;
+				position: relative;	
+				margin-left: 65px;
+			}
+			.maomid1 {
+				width: 232px;
+				height: 340px;
+				position: relative;
+				background:#c58989;
+				box-shadow: 0px -8px 25px #f3dcdc inset, -8px 0px 20px #c9efd5 inset;
+				float: left;
+				margin-right: 45px;
+				margin-top: 45px;
+			}
+			
+			.maomid11 {
+				width: 232px;
+				height: 270px;
+				position: relative;
+			}
+			
+			.maomid12{
+				width: 232px;
+				height: 50px;
+				position: relative;
+				margin-top: 15px;
+				font-size: 25px;
+				color: #ddd4d7;
+				text-align: center;
+			} 
+			.footer{
+				width: 1000px;
+				height:50px;
+				position: relative;
+				margin-top: 15px;
+				font-size: 25px;
+				color: #66545a;
+				text-align: center;
+			} 
+		</style>
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div class="name">
+				<div class="le"> <img src="img/1533307481-vXNZerEDWh.png" height="100%" width="100%" /></div>
+				<div class="me">
+					<p>暖暖の宠物</p>
+				</div>
+				<div class="ri"> <img src="img/55e569a9aa8cf.jpg" height="100%" width="100%" /></div>
+			</div>
+			<div class="maomi">
+				<div class="maomi1">猫咪篇</div>
+				<div class="maomi2">本店经营多种种类的猫咪，包括：中华田园猫，暹罗猫，布偶猫，英国短毛猫，美国短毛猫，波斯猫等种类</div>
+				<div class="maomid">
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg1.jpg" width="100%" height="100%" /> </div>
+						<div class="maomid12">布偶猫：温顺安静</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg(1)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">英短：温柔友善</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (2)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">美短：活泼温顺</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/86d6277f9e2f0708f41a2dd5e324b899a801f2cc1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">暹罗猫：机智灵活</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (3)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">中华田园猫：傲娇</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/u=3270547493,1090260648&fm=26&gp=01.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">波斯猫：温柔亲人</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (4)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">矮脚猫：撒娇粘人</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (5)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">无毛猫：温顺忠诚</div>
+					</div>
+				</div>
+			</div>
+			<div class="maomi">
+				<div class="maomi1">犬类篇</div>
+				<div class="maomi2">本店经营多种种类的犬，包括：中华田园猫，暹罗猫，布偶猫，英国短毛猫，美国短毛猫，波斯猫等种类</div>
+				<div class="maomid">
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (6)1.jpg" width="100%" height="100%" /> </div>
+						<div class="maomid12">秋田犬：勇敢</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (7)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">萨摩耶犬：亲人</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/timg (8)1.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">贵宾犬：优雅</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/u=1331244896,3609859940&fm=26&gp=01.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">博美犬：友善</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/u=517307666,3887184681&fm=26&gp=01.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">中华田园猫：傲娇</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/u=672767301,3138156231&fm=26&gp=01.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">哈士奇犬：活泼</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/51118.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">金毛寻回犬：懂事</div>
+					</div>
+					<div class="maomid1">
+						<div class="maomid11"><img src="img/51119462.jpg" width="100%" height="100%" /></div>
+						<div class="maomid12">边境牧羊犬：聪明</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				Copyright &copy;暖暖の宠物
+			</div>
+		</div>
+	</body>
+
+</html>
